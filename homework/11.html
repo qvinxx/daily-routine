@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        font-family: Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        column-gap: 20px;
+      }
+
+      .profile {
+        width: 200px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        margin-right: 15px;
+        vertical-align: top;
+      }
+
+      .profile-picture {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 12px;
+      }
+
+      .name {
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 8px;
+        margin-bottom: 4px;
+      }
+
+      .friends {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        align-items: center;
+        margin-left: 8px;
+        margin-bottom: 10px;
+      }
+      
+      .friends-ava {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 14px;
+        vertical-align: middle;
+        margin-right: 4px;
+      }
+
+      .mutual-friends {
+        color: rgb(100, 100, 100);
+        margin-left: 4px;
+      }
+
+      .add-friend-button {
+        background-color: rgb(24, 119, 242);
+        color: white;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 4px;
+        font-size: 16px;
+        margin-left: 8px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="profile">
+        <div>
+          <img class="profile-picture" src="thumbnails/pawel-czerwinski-p80iCB-XpsU-unsplash.jpg">
+        </div>
+        <div class="acc-info">
+          <div class="acc-name">
+            <p class="name">
+              Oliver
+            </p>
+          </div>
+          <div class="friends-count">
+            <div class="friends">
+              <img class="friends-ava" src="thumbnails/steve-johnson-fwJnCtO4W2c-unsplash.jpg" alt="">
+              <div  class="mutual-friends">
+                <p>
+                  2 mutual friends
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="friend-button">
+            <button class="add-friend-button">
+              Add Friend
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="profile">
+        <div>
+          <img class="profile-picture" src="thumbnails/pawel-czerwinski-TLd2K-G3518-unsplash.jpg">
+        </div>
+        <div class="acc-info">
+          <div class="acc-name">
+            <p class="name">
+              Mimi
+            </p>
+          </div>
+          <div class="friends-count">
+            <div class="friends">
+              <img class="friends-ava" src="thumbnails/steve-johnson-fwJnCtO4W2c-unsplash.jpg" alt="">
+              <div  class="mutual-friends">
+                <p>
+                  3 mutual friends
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="friend-button">
+            <button class="add-friend-button">
+              Add Friend
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="profile">
+        <div>
+          <img class="profile-picture" src="thumbnails/susan-wilkinson-JDJwyiSJZBc-unsplash.jpg">
+        </div>
+        <div class="acc-info">
+          <div class="acc-name">
+            <p class="name">
+              Rex
+            </p>
+          </div>
+          <div class="friends-count">
+            <div class="friends">
+              <img class="friends-ava" src="thumbnails/steve-johnson-fwJnCtO4W2c-unsplash.jpg" alt="">
+              <div  class="mutual-friends">
+                <p>
+                  4 mutual friends
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="friend-button">
+            <button class="add-friend-button">
+              Add Friend
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
